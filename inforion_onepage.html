@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ИНФОРИОН · С Днём программиста (13.09.2025)</title>
+
+  <!-- Жёсткий запрет индексации и кэширования -->
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet">
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="referrer" content="no-referrer">
+
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b0f10;--fg:#d1f7c4;--dim:#9ab69f;--accent:#22d3ee;--cursor:#22d3ee}
+    *{box-sizing:border-box} html,body{height:100%}
+    body{margin:0;background:var(--bg);color:var(--fg);font-family:'JetBrains Mono',monospace;display:flex;flex-direction:column}
+    header{padding:14px 16px;background:#0d1326;border-bottom:1px solid #0f171a;font-weight:800;letter-spacing:.3px;color:#22d3ee}
+    main{flex:1;display:flex;flex-direction:column;max-width:1100px;margin:0 auto;width:100%}
+    pre#term{flex:1;margin:0;padding:20px;white-space:pre-wrap;word-break:break-word;tab-size:2;line-height:1.4;overflow:auto;font-size:15px}
+    .cursor{display:inline-block;width:8px;height:18px;background:var(--cursor);vertical-align:-3px;margin-left:3px;animation:blink 1s step-end infinite}
+    @keyframes blink{50%{opacity:0}}
+  </style>
+</head>
+<body>
+  <header>ИНФОРИОН ▸ С Днём программиста (13.09.2025)</header>
+  <main>
+    <pre id="term"></pre><span class="cursor"></span>
+  </main>
+
+  <script>
+    const data = [
+  {name:`Антон Николаевич`,position:`Руководитель отдела исследований и разработок`,days:212,comment:`Раздаёт квесты команде и следит за дедлайнами`},
+  {name:`Юрий Валерьевич`,position:`Ведущий системный администратор 3 категории`,days:3358,comment:`Контролирует всю систему, чтобы сбои обходили стороной`},
+  {name:`Олег Раульевич`,position:`Системный администратор 1 категории`,days:2551,comment:`Всегда на посту: перезагрузит, поправит и восстановит`},
+  {name:`Демид Алексеевич`,position:`Руководитель группы  инженерного анализа`,days:2550,comment:`Умеет держать баланс между скоростью и качеством, направляет команду.`},
+  {name:`Кирилл Сергеевич`,position:`Руководитель группы программного анализа`,days:1258,comment:`Придумывает и проверяет новые подходы, всегда найдёт, что скрыто под капотом.`},
+  {name:`Владимир Евгеньевич`,position:`Программист-исследователь 1 класса`,days:1669,comment:`Настоящий мастер ИИ, оптимизирует алгоритмы и находит баги быстрее, чем кофе остывает`},
+  {name:`Владимир Владимирович`,position:`Инженер-программист 1 категории`,days:1200,comment:`Тестирует гипотезы, ищет нестандартные решения и исследует новые технологии.`},
+  {name:`Дмитрий Станиславович`,position:`Инженер-программист 3 категории`,days:730,comment:`Придумывает и проверяет новые подходы, исследуя системы и создавая прототипы будущих решений`},
+  {name:`Магомедрасул Магомедович`,position:`Инженер-программист 3 категории`,days:730,comment:`Ищет уязвимости, изучает внутренности программ и открывает дорогу к улучшениям`},
+  {name:`Дмитрий Владимирович`,position:`Младший инженер-исследователь 3 класса`,days:585,comment:`Помогает в исследованиях, пишет первые скрипты и пробует свежие идеи.`},
+  {name:`Анатолий Сергеевич`,position:`Руководитель группы разработок и анализа программно-аппаратного обеспечения`,days:1516,comment:`Определяет стратегию движения команды, ведёт её через баги и сроки, контролирует результат.`},
+  {name:`Сергей Александрович`,position:`Программист-исследователь 2 категории`,days:1137,comment:`Оттачивает мастерство на реальных задачах, исправляет баги и строит кодовую архитектуру`},
+  {name:`Илья Игоревич`,position:`Программист-исследователь 2 категории`,days:823,comment:`Экспериментирует с кодом, внедряет новые подходы и превращает их в рабочие прототипы.`},
+  {name:`Галина Сергеевна`,position:`Программист-исследователь 3 категории`,days:61,comment:`Учится и помогает в командных экспериментах, пробует себя в разных направлениях.`},
+  {name:`Динислам Алиевич`,position:`Младший программист-исследователь 3 категории`,days:676,comment:`Вносит креатив в проекты, совмещая исследования с практическими задачами.`},
+  {name:`Андрей Андреевич`,position:`Руководитель группы исследований и анализа данных`,days:206,comment:`Следит за проектами и помогает команде двигаться вперёд даже в условиях цейтнота, сохраняя боевой дух`},
+  {name:`Артем Андреевич`,position:`Программист-исследователь 2 класса`,days:12,comment:`Собирает данные, проверяет прототипы и помогает довести идеи до рабочего состояния.`},
+  {name:`Артём Денисович`,position:`Программист-исследователь 3 класса`,days:61,comment:`Копается в неизведанном коде, оптимизирует систему, строит базы и собирает модули.`},
+  {name:`Илья Васильевич`,position:`Младший программист-исследователь 3 класса`,days:590,comment:`Превращает сложные маршруты в стройные модели и автоматизирует логистику с помощью кода.`},
+  {name:`Юрий Алексеевич`,position:`Инженер по информационной безопасности`,days:219,comment:`Смотритель цифровых границ: защищает данные и блокирует угрозы.`},
+  {name:`Никита Андреевич`,position:`Инженер второй линии поддержки`,days:186,comment:`Реагирует на запросы моментально, не даёт проблемам разрастись.`},
+  {name:`Георгий Анатольевич`,position:`Ведущий инженер первой линии поддержки`,days:579,comment:`Первым встречает пользователей, помогает им и удерживает порядок в тикетах.`},
+  {name:`Максим Сергеевич`,position:`Ведущий инженер первой линии поддержки`,days:218,comment:`Умеет из хаоса обращений сделать стройную очередь и быстро найти решение.`},
+  {name:`Данила Вадимович`,position:`Инженер первой линии поддержки`,days:100,comment:`Уже уверенно встречает пользователей и прокачивает скилл решения задач`},
+  {name:`Рашид Рашидович`,position:`Специалист по анализу защищенности 2 категории`,days:561,comment:`Ищет уязвимости и укрепляет системы от атак.`},
+  {name:`Михаил Сергеевич`,position:`Ведущий инженер по информационной безопасности`,days:1159,comment:`Подключается к самым сложным инцидентам и решает их на профессиональном уровне.`}
+];
+
+    function makeMessage(name, index){
+      if(index >= 19) return `ИБ — это как антивирус для программистов. Сегодня и ваш день, ${name}!`;
+      return `С Днём программиста 13.09.2025, ${name}!`;
+    }
+
+    // Формируем текст: JSON-объекты по одному, с нужными полями
+    const blocks = data.map((e, idx) => ({
+      name: e.name,
+      position: e.position,
+      tenure_days_as_of_2025_09_13: e.days,
+      role_summary: e.comment,
+      message: makeMessage(e.name, idx)
+    }));
+
+    const headerText = "ИНФОРИОН ▸ С Днём программиста (13.09.2025)\n\n";
+    const finalText = headerText + blocks.map(o => JSON.stringify(o, null, 2)).join("\n\n") + "\n";
+
+    const term = document.getElementById('term');
+
+    // Анимация «постепенного набора»
+    let i = 0;
+    const SPEED = 8; // мс на символ
+    function tick(){
+      if(i <= finalText.length){
+        term.textContent = finalText.slice(0, i++);
+        setTimeout(tick, SPEED);
+      }
+    }
+    tick();
+  </script>
+</body>
+</html>
